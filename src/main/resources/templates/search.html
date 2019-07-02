@@ -38,7 +38,7 @@
 
     <!-- TODO #2 - Loop over jobs map to display all job fields -->
     <div th:if="${jobs}">
-        <div th:each="job: ${jobs}">
+        <div th:fragment="list-jobs" th:each="job: ${jobs}">
 
             <table class = "job-listing">
                 <tr>
